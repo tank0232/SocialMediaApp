@@ -68,7 +68,7 @@ public class RegisterActivity extends AppCompatActivity {
                     if(task.isSuccessful())
                     {
                         Toast.makeText(RegisterActivity.this, "Registration Successful, We have send you a mail ", Toast.LENGTH_SHORT).show();
-                         SendUserToLoginActivity();
+                        SendUserToSetupActivity();
                          mAuth.signOut();
 
                     }
@@ -128,7 +128,7 @@ public class RegisterActivity extends AppCompatActivity {
                             {
                                 //SendEmailVerificationMessage();
                                 Toast.makeText(RegisterActivity.this, "Registration Successful, We have send you a mail ", Toast.LENGTH_SHORT).show();
-                                SendUserToLoginActivity();
+                                SendUserToSetupActivity();
                                 loadingBar.dismiss();
                             }
                             else
@@ -143,10 +143,11 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
-    private void SendUserToLoginActivity() {
-        Intent LoginIntent = new Intent(RegisterActivity.this,LoginActivity.class);
-        LoginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(LoginIntent);
+    private void SendUserToSetupActivity() {
+        Intent setupIntent = new Intent(RegisterActivity.this,SetupActivity.class);
+        setupIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(setupIntent);
         finish();
     }
+
 }
