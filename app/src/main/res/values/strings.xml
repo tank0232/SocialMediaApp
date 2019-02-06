@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SocialNetwork</string>
+    <string name="draw_open">Drawer Open</string>
+    <string name="draw_close">Drawer Close</string>
+</resources>
