@@ -5,9 +5,7 @@ This an introduction of a Social Media App known as social network
 This project is done by Ryan on 2018
 
 # Documentation
-see documentation [here](
-        SocialMediaApp/Social Media App.docx
-      )
+see documentation [here](SocialMediaApp/Social Media App.docx)
 
 # Apk file 
 Download the latest apk here [here](socialnetwork.apk) (compatible with Android Oreo 8.0)
